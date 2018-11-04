@@ -35,6 +35,6 @@ Siren
 
 <b>Instructions</b>
 
-used album_title endpoint for search
+used reponame/username endpoint for search
 
 
