@@ -8,6 +8,7 @@
 
 import UIKit
 
+private let ownerTableViewCell = "OwnerTableViewCell"
 private let repositoriesTableViewCell = "RepositoriesTableViewCell"
 
 //protocol SeeOwnerVCDelegate {
@@ -28,32 +29,27 @@ class SearchViewController: BaseViewController {
     // MARK: - init
     
     var repositories: Repositories?
+    var owners: Owners?
+    let segment: UISegmentedControl = UISegmentedControl(items: ["Repositories", "Users"])
     
     // MARK: - viewDidLoad
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let segment: UISegmentedControl = UISegmentedControl(items: ["Repositories", "Users"])
+        initUI()
+    }
+    
+    // MARK: - initUI
+    
+    func initUI() {
+        
         segment.sizeToFit()
         segment.tintColor = UIColor.rgb(red: 69, green: 79, blue: 99)
         segment.selectedSegmentIndex = 0
         segment.setTitleTextAttributes([NSAttributedStringKey.font: Font(.installed(.regular), size: .standard(.h2)).instance], for: .normal)
         self.navigationItem.titleView = segment
         
-        initUI()
-    }
-
-    // MARK: - viewWillAppear
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-//        self.navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-    
-    // MARK: - initUI
-    
-    func initUI() {
         searchController.delegate = self
         searchController.tintColor = UIColor.rgb(red: 69, green: 79, blue: 99)
         searchController.barTintColor = Color.white.value // color of text field background
@@ -61,6 +57,7 @@ class SearchViewController: BaseViewController {
         searchController.setTextFieldColor(color: UIColor.rgb(red: 69, green: 79, blue: 99))
         searchController.searchBarStyle = .minimal
         
+        self.tableView.register(UINib(nibName: ownerTableViewCell, bundle: nil), forCellReuseIdentifier: ownerTableViewCell)
         self.tableView.register(UINib(nibName: repositoriesTableViewCell, bundle: nil), forCellReuseIdentifier: repositoriesTableViewCell)
         self.tableView.layer.cornerRadius = 20
         self.tableView.dataSource = self

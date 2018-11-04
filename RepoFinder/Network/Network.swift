@@ -37,6 +37,7 @@ class Network {
     static var apiEndPointUrl = baseUrl
     
     static let searchUrl = "search/repositories"
+    static let searchUsersUrl = "search/users"
     static let userProfileUrl = "users"
     
     // MARK: - RequestWith T
@@ -91,6 +92,25 @@ class Network {
                 completion(true, repositories)
             } catch let jsonError {
                 print("Error serializing json.Network.getSearchResult:", jsonError)
+                completion(false, nil)
+            }
+        }
+    }
+    
+    // MARK: - GetOwners
+    
+    static func getOwners(url: String, viewController: UIViewController, parameters: Parameters?, completion: @escaping (_ success: Bool, Owners?) -> Void) {
+        
+        let fullUrl = URL(string: "\(apiEndPointUrl)\(url)")
+        
+        self.requestWith(url: fullUrl, method: .get, parameters: parameters, viewController: viewController, showHud: true, showErrorAlerts: false, encoding: JSONEncoding.default) { (response) in
+            
+            guard let data = response?.data else { return }
+            do {
+                let owners = try self.decoder.decode(Owners.self, from: data)
+                completion(true, owners)
+            } catch let jsonError {
+                print("Error serializing json.Network.getOwners:", jsonError)
                 completion(false, nil)
             }
         }

@@ -31,15 +31,7 @@ class RepositoryDetailsViewController: BaseViewController {
 
         initUI()
     }
-    
-    // MARK: - viewWillAppear
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
-        self.navigationController?.navigationBar.barTintColor = Color.white.value
-    }
-    
+        
     // MARK: - initUI
     
     func initUI() {

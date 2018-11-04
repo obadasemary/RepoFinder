@@ -28,6 +28,22 @@ extension SearchViewController {
         }
     }
     
+    // MARK: - callGetOwners
+    
+    func callGetOwners(viewController: UIViewController, q: String, per_page: Int, page: Int, completion: @escaping (_ result: Bool, _ postListResponse: Owners?) -> Void) {
+        
+        let url = "\(Network.searchUsersUrl)?q=\(q)&per_page=\(per_page)&page=\(page)"
+        
+        Network.getOwners(url: url, viewController: viewController, parameters: nil) { (success, response) in
+            
+            if success {
+                completion(true, response)
+            } else {
+                completion(false, nil)
+            }
+        }
+    }
+    
     // MARK: - pressActions
     
     func pressSeeUserInfo(owner: Owner) {

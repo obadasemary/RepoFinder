@@ -23,8 +23,6 @@ class AlertView {
         viewController.present(alert, animated: true, completion: nil)
     }
     
-    
-    
     static func show(in viewController: UIViewController, title: String?, message: String?, completion : @escaping () -> (Void)) {
     
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert);

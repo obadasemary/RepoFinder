@@ -50,15 +50,6 @@ enum Color {
     case warning
     case primary
     
-    case BAKANLIK
-    case AKADEMİ
-    case VAKIF
-    case MUCİZE_BEBEKLER_TV
-    
-    case Bakanlık
-    case Akademi
-    case Vakıf
-    
     // 1
     case custom(hexString: String, alpha: Double)
     // 2
@@ -131,20 +122,6 @@ extension Color {
             instanceColor = UIColor(hexString: "#800883")
         case .custom(let hexValue, let opacity):
             instanceColor = UIColor(hexString: hexValue).withAlphaComponent(CGFloat(opacity))
-        case .BAKANLIK:
-            instanceColor = UIColor.rgb(red: 128, green: 8, blue: 131)
-        case .Bakanlık:
-            instanceColor = UIColor.rgb(red: 128, green: 8, blue: 131)
-        case .AKADEMİ:
-            instanceColor = UIColor.rgb(red: 146, green: 125, blue: 253)
-        case .Akademi:
-            instanceColor = UIColor.rgb(red: 146, green: 125, blue: 253)
-        case .VAKIF:
-            instanceColor = UIColor.rgb(red: 255, green: 0, blue: 115)
-        case .Vakıf:
-            instanceColor = UIColor.rgb(red: 255, green: 0, blue: 115)
-        case .MUCİZE_BEBEKLER_TV:
-            instanceColor = UIColor.rgb(red: 253, green: 198, blue: 49)
         }
         return instanceColor
     }

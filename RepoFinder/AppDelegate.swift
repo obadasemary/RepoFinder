@@ -24,7 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         window?.makeKeyAndVisible()
         
-//        KeyboardManager.configure()
         FirebaseApp.configure()
         Appearance.configure()
         Fabric.with([Crashlytics.self])
