@@ -46,7 +46,6 @@ class Language {
         notification.soundName = UILocalNotificationDefaultSoundName
         UIApplication.shared.scheduleLocalNotification(notification)
         
-        
         guard let settings = UIApplication.shared.currentUserNotificationSettings else { return }
         
         if settings.types == .none {

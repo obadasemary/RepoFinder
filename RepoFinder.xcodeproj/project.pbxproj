@@ -76,6 +76,7 @@
 		AF336EE9218EA6CB007B21E2 /* OwnerVC-Extension+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF336EE6218EA6CB007B21E2 /* OwnerVC-Extension+TableViewDelegate.swift */; };
 		AF336EEA218EA6CB007B21E2 /* OwnerVC-Extension+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF336EE7218EA6CB007B21E2 /* OwnerVC-Extension+TableViewDataSource.swift */; };
 		AF336EEB218EA6CB007B21E2 /* OwnerVC-Ex+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF336EE8218EA6CB007B21E2 /* OwnerVC-Ex+Helpers.swift */; };
+		AF336EED218F36A3007B21E2 /* Owners.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF336EEC218F36A3007B21E2 /* Owners.swift */; };
 		AFFA9DED218E88290093F380 /* RepositoryDetailsVC-Ex+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA9DEC218E88290093F380 /* RepositoryDetailsVC-Ex+Helpers.swift */; };
 		AFFA9DF1218E8C920093F380 /* OwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA9DEF218E8C920093F380 /* OwnerViewController.swift */; };
 		AFFA9DF2218E8C920093F380 /* OwnerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFA9DF0218E8C920093F380 /* OwnerViewController.xib */; };
@@ -163,6 +164,7 @@
 		AF336EE6218EA6CB007B21E2 /* OwnerVC-Extension+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OwnerVC-Extension+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		AF336EE7218EA6CB007B21E2 /* OwnerVC-Extension+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OwnerVC-Extension+TableViewDataSource.swift"; sourceTree = "<group>"; };
 		AF336EE8218EA6CB007B21E2 /* OwnerVC-Ex+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OwnerVC-Ex+Helpers.swift"; sourceTree = "<group>"; };
+		AF336EEC218F36A3007B21E2 /* Owners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owners.swift; sourceTree = "<group>"; };
 		AFFA9DEC218E88290093F380 /* RepositoryDetailsVC-Ex+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RepositoryDetailsVC-Ex+Helpers.swift"; sourceTree = "<group>"; };
 		AFFA9DEF218E8C920093F380 /* OwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerViewController.swift; sourceTree = "<group>"; };
 		AFFA9DF0218E8C920093F380 /* OwnerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OwnerViewController.xib; sourceTree = "<group>"; };
@@ -242,7 +244,6 @@
 				AF2C09B2218A3A6900D12CB3 /* Extension */,
 				AF2C09B8218A3A6900D12CB3 /* DataManager */,
 				AF2C09BA218A3A6900D12CB3 /* Appearance */,
-				AF2C09BF218A3A6900D12CB3 /* Encode */,
 				AF2C09C0218A3A6900D12CB3 /* Colors */,
 				AF2C09C2218A3A6900D12CB3 /* AlertView */,
 				AF2C09C4218A3A6900D12CB3 /* Fonts */,
@@ -296,13 +297,6 @@
 				AF2C09BB218A3A6900D12CB3 /* Appearance.swift */,
 			);
 			path = Appearance;
-			sourceTree = "<group>";
-		};
-		AF2C09BF218A3A6900D12CB3 /* Encode */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Encode;
 			sourceTree = "<group>";
 		};
 		AF2C09C0218A3A6900D12CB3 /* Colors */ = {
@@ -442,6 +436,7 @@
 				AF2C0A42218C894900D12CB3 /* Item.swift */,
 				AF2C0A44218C896900D12CB3 /* License.swift */,
 				AF2C0A46218C897900D12CB3 /* Owner.swift */,
+				AF336EEC218F36A3007B21E2 /* Owners.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -699,6 +694,7 @@
 				AF2C0A45218C896900D12CB3 /* License.swift in Sources */,
 				AF2C0A03218A3A6A00D12CB3 /* Font.swift in Sources */,
 				AF2C0A3D218A65DB00D12CB3 /* RepositoriesTableViewCell.swift in Sources */,
+				AF336EED218F36A3007B21E2 /* Owners.swift in Sources */,
 				AFFC814A218D059B0080DDFF /* BaseViewController.swift in Sources */,
 				AF2C0A43218C894900D12CB3 /* Item.swift in Sources */,
 				AFFC814E218D06600080DDFF /* RepositoryDetailsVC-Extension+TableViewDelegate.swift in Sources */,

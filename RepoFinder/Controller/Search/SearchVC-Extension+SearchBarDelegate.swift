@@ -18,16 +18,33 @@ extension SearchViewController: UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
         guard let searchText = searchBar.text, !searchText.isEmpty else { return }
-        callGetSearchResult(viewController: self, q: searchText, per_page: 100, page: 1) { (success, response) in
+        
+        if self.segment.selectedSegmentIndex == 0 {
+            callGetSearchResult(viewController: self, q: searchText, per_page: 100, page: 1) { (success, response) in
 
-            if success {
+                if success {
 
-                self.searchController.endEditing(true)
-                self.repositories = response!
+                    self.searchController.endEditing(true)
+                    self.repositories = response!
 
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                }
+            }
+        } else {
+            callGetOwners(viewController: self, q: searchText, per_page: 100, page: 1) { (success, response) in
+                
+                if success {
+                    
+                    self.searchController.endEditing(true)
+                    self.owners = response!
+                    
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
                 }
             }
         }
