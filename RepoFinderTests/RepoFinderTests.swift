@@ -23,8 +23,14 @@ class RepoFinderTests: XCTestCase {
     }
     
     func testRepositories() {
-        
-//        XCTAssertEqual(0, 1)
+        let repositoriesViewModel = RepositoriesViewModel()
+        let url = "\(Network.searchUsersUrl)?q=\("Obadasemary")&per_page=\(100)&page=\(1)"
+        repositoriesViewModel.getOwners(url: url, viewController: SearchViewController(), parameters: nil)
+        repositoriesViewModel.ownersObserver.bind { (result) in
+            DispatchQueue.main.async {
+                XCTAssertEqual("Obadasemary", result?.items?[0].login)
+            }
+        }
     }
     
     func testExample() {
