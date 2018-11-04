@@ -33,6 +33,14 @@ class SearchViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let segment: UISegmentedControl = UISegmentedControl(items: ["Repositories", "Users"])
+        segment.sizeToFit()
+        segment.tintColor = UIColor.rgb(red: 69, green: 79, blue: 99)
+        segment.selectedSegmentIndex = 0
+        segment.setTitleTextAttributes([NSAttributedStringKey.font: Font(.installed(.regular), size: .standard(.h2)).instance], for: .normal)
+        self.navigationItem.titleView = segment
+        
         initUI()
     }
 
@@ -40,21 +48,19 @@ class SearchViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        self.navigationItem.backBarButtonItem?.tintColor = Color.black.value
+//        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
     // MARK: - initUI
     
     func initUI() {
         searchController.delegate = self
-//        searchController.backgroundColor = 
+        searchController.tintColor = UIColor.rgb(red: 69, green: 79, blue: 99)
+        searchController.barTintColor = Color.white.value // color of text field background
+        searchController.backgroundColor = .clear
+        searchController.setTextFieldColor(color: UIColor.rgb(red: 69, green: 79, blue: 99))
+        searchController.searchBarStyle = .minimal
+        
         self.tableView.register(UINib(nibName: repositoriesTableViewCell, bundle: nil), forCellReuseIdentifier: repositoriesTableViewCell)
         self.tableView.layer.cornerRadius = 20
         self.tableView.dataSource = self

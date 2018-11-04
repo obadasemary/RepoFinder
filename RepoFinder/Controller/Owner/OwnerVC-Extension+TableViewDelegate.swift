@@ -1,5 +1,5 @@
 //
-//  RepositoryDetailsVC-Extension+TableViewDelegate.swift
+//  OwnerVC-Extension+TableViewDelegate.swift
 //  RepoFinder
 //
 //  Created by Abdelrahman Mohamed on 11/1/18.
@@ -10,16 +10,23 @@ import UIKit
 
 // MARK: - UITableView Delegate
 
-extension RepositoryDetailsViewController : UITableViewDelegate {
+extension OwnerViewController : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 1 {
+            guard let currentItem = item?[indexPath.row] else { return }
+            let RepositoryDetailsVC = RepositoryDetailsViewController()
+            RepositoryDetailsVC.item = currentItem
+            RepositoryDetailsVC.title = currentItem.name
+            self.navigationController?.pushViewController(RepositoryDetailsVC, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
             return UITableViewAutomaticDimension
         } else {
-            return UITableViewAutomaticDimension
+            return 200
         }
     }
     

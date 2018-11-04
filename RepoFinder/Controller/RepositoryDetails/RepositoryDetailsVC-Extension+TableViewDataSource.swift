@@ -1,5 +1,5 @@
 //
-//  SearchVC-Extension+TableViewDataSource.swift
+//  RepositoryDetailsVC-Extension+TableViewDataSource.swift
 //  RepoFinder
 //
 //  Created by Abdelrahman Mohamed on 11/1/18.
@@ -27,12 +27,12 @@ extension RepositoryDetailsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let newItem = item else { return UITableViewCell() }
+        guard let currentItem = item else { return UITableViewCell() }
         if indexPath.section == 0 {
             if let cell = tableView.dequeueReusableCell(withIdentifier: RepositoryDetailsTableViewCell.identifier, for: indexPath) as? RepositoryDetailsTableViewCell {
-                cell.setupCell(item: newItem)
+                cell.setupCell(item: currentItem)
                 cell.makeSeeUserInfoAction = { [weak self] in
-                    guard let owner = newItem.owner else { return }
+                    guard let owner = currentItem.owner else { return }
                     self?.pressSeeUserInfo(owner: owner)
                 }
                 return cell
@@ -45,15 +45,15 @@ extension RepositoryDetailsViewController: UITableViewDataSource {
             cell.textLabel?.numberOfLines = 0
             switch indexPath.row {
             case 0:
-                cell.textLabel?.text = "Name: \(newItem.owner?.login ?? "")"
+                cell.textLabel?.text = "Name: \(currentItem.owner?.login ?? "")"
             case 1:
-                cell.textLabel?.text = "Description: \(newItem.description ?? "")"
+                cell.textLabel?.text = "Description: \(currentItem.description ?? "")"
             case 2:
-                cell.textLabel?.text = "Forks: \(newItem.forksCount ?? 0)"
+                cell.textLabel?.text = "Forks: \(currentItem.forksCount ?? 0)"
             case 3:
-                cell.textLabel?.text = "Language: \(newItem.language ?? "")"
+                cell.textLabel?.text = "Language: \(currentItem.language ?? "")"
             case 4:
-                cell.textLabel?.text = "Default branch name: \(newItem.defaultBranch ?? "")"
+                cell.textLabel?.text = "Default branch name: \(currentItem.defaultBranch ?? "")"
             default:
                 cell.textLabel?.text = ""
             }

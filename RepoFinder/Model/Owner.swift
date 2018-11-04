@@ -26,7 +26,7 @@ struct Owner: Codable {
     let hireable: Bool?
     let bio: String?
     let publicRepos, publicGists, followers, following: Int?
-    let createdAt, updatedAt: Date?
+    let createdAt, updatedAt: String?
     
     enum CodingKeys: String, CodingKey {
         case login, id

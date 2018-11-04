@@ -10,11 +10,13 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+    // MARK: - viewDidLoad
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.backgroundColor = Color.white.value
-        self.navigationController?.navigationBar.barTintColor = Color.black.value
+        self.navigationController?.navigationBar.barTintColor = Color.white.value
         self.hideKeyboardWhenTappedAround()
     }
     
@@ -25,6 +27,17 @@ class BaseViewController: UIViewController {
         UIApplication.shared.statusBarStyle = .default
         self.navigationController?.navigationBar.hideBottomHairline()
     }
+    
+    // MARK: - viewDidAppear
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigationItem.backBarButtonItem?.tintColor = Color.black.value
+    }
+    
+    // MARK: - preferredStatusBarStyle
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .default

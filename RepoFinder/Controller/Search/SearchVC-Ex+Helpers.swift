@@ -31,12 +31,9 @@ extension SearchViewController {
     // MARK: - pressActions
     
     func pressSeeUserInfo(owner: Owner) {
-        print(owner.login ?? "")
-        //        let storyBoard: UIStoryboard = UIStoryboard(name: "Profile", bundle: nil)
-        //        let newViewController = storyBoard.instantiateViewController(withIdentifier: "profileVC") as! ProfileViewController
-        //        newViewController.userId = userId
-        //        newViewController.isOrganization = isOrganization
-        //        newViewController.hidesBottomBarWhenPushed = true
-        //        self.navigationController?.pushViewController(newViewController, animated: true)
+        let ownerVC = OwnerViewController()
+        ownerVC.owner = owner
+        ownerVC.title = owner.login
+        self.navigationController?.pushViewController(ownerVC, animated: true)
     }
 }

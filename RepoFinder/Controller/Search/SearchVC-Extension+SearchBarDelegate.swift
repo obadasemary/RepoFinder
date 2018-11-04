@@ -15,13 +15,17 @@ extension SearchViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
         print(searchText)
-        
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let searchText = searchBar.text, !searchText.isEmpty else { return }
         callGetSearchResult(viewController: self, q: searchText, per_page: 100, page: 1) { (success, response) in
-            
+
             if success {
-                
+
+                self.searchController.endEditing(true)
                 self.repositories = response!
-                
+
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
@@ -29,7 +33,7 @@ extension SearchViewController: UISearchBarDelegate {
         }
     }
     
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         self.searchController.endEditing(true)
     }
 }
