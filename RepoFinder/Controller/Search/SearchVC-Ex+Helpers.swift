@@ -12,6 +12,38 @@ import UIKit
 
 extension SearchViewController {
     
+    // MARK: - observers
+    
+    func observers() {
+        
+        RepositoriesViewModel.shared.errorObserver.bind { (error) in
+            
+            DispatchQueue.main.async {
+                self.searchController.endEditing(true)
+                self.tableView.reloadData()
+                print(error ?? "")
+            }
+        }
+        
+        RepositoriesViewModel.shared.repositoriesObserver.bind { (repos) in
+            
+            DispatchQueue.main.async {
+                self.searchController.endEditing(true)
+                self.repositories = repos!
+                self.tableView.reloadData()
+            }
+        }
+        
+        RepositoriesViewModel.shared.ownersObserver.bind { (owners) in
+            
+            DispatchQueue.main.async {
+                self.searchController.endEditing(true)
+                self.owners = owners!
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
     // MARK: - CallGetSearchRepositories
     
     func callGetSearchResult(viewController: UIViewController, q: String, per_page: Int, page: Int, completion: @escaping (_ result: Bool, _ postListResponse: Repositories?) -> Void) {

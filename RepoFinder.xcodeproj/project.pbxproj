@@ -80,6 +80,7 @@
 		AF336EED218F36A3007B21E2 /* Owners.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF336EEC218F36A3007B21E2 /* Owners.swift */; };
 		AF336EF5218F5534007B21E2 /* RepoFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF336EF4218F5534007B21E2 /* RepoFinderTests.swift */; };
 		AF336F29218F5C42007B21E2 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF336F28218F5C41007B21E2 /* Box.swift */; };
+		AF336F2C218F5DD5007B21E2 /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF336F2B218F5DD5007B21E2 /* RepositoriesViewModel.swift */; };
 		AFFA9DED218E88290093F380 /* RepositoryDetailsVC-Ex+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA9DEC218E88290093F380 /* RepositoryDetailsVC-Ex+Helpers.swift */; };
 		AFFA9DF1218E8C920093F380 /* OwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA9DEF218E8C920093F380 /* OwnerViewController.swift */; };
 		AFFA9DF2218E8C920093F380 /* OwnerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFA9DF0218E8C920093F380 /* OwnerViewController.xib */; };
@@ -185,6 +186,7 @@
 		AF336EF4218F5534007B21E2 /* RepoFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoFinderTests.swift; sourceTree = "<group>"; };
 		AF336EF6218F5534007B21E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF336F28218F5C41007B21E2 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		AF336F2B218F5DD5007B21E2 /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
 		AFFA9DEC218E88290093F380 /* RepositoryDetailsVC-Ex+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RepositoryDetailsVC-Ex+Helpers.swift"; sourceTree = "<group>"; };
 		AFFA9DEF218E8C920093F380 /* OwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerViewController.swift; sourceTree = "<group>"; };
 		AFFA9DF0218E8C920093F380 /* OwnerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OwnerViewController.xib; sourceTree = "<group>"; };
@@ -486,6 +488,7 @@
 		AF336F2A218F5C60007B21E2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AF336F2B218F5DD5007B21E2 /* RepositoriesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -820,6 +823,7 @@
 				AF2C0A43218C894900D12CB3 /* Item.swift in Sources */,
 				AFFC814E218D06600080DDFF /* RepositoryDetailsVC-Extension+TableViewDelegate.swift in Sources */,
 				AF2C09F2218A3A6A00D12CB3 /* HelperMethods.swift in Sources */,
+				AF336F2C218F5DD5007B21E2 /* RepositoriesViewModel.swift in Sources */,
 				AF336EEB218EA6CB007B21E2 /* OwnerVC-Ex+Helpers.swift in Sources */,
 				AF2C0A41218C893700D12CB3 /* Repositories.swift in Sources */,
 				AF336EEA218EA6CB007B21E2 /* OwnerVC-Extension+TableViewDataSource.swift in Sources */,

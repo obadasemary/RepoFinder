@@ -22,32 +22,14 @@ extension SearchViewController: UISearchBarDelegate {
         guard let searchText = searchBar.text, !searchText.isEmpty else { return }
         
         if self.segment.selectedSegmentIndex == 0 {
-            callGetSearchResult(viewController: self, q: searchText, per_page: 100, page: 1) { (success, response) in
-
-                if success {
-
-                    self.searchController.endEditing(true)
-                    self.repositories = response!
-
-                    DispatchQueue.main.async {
-                        self.tableView.reloadData()
-                    }
-                }
-            }
+            let url = "\(Network.searchUrl)?q=\(searchText)&per_page=\(100)&page=\(1)"
+            RepositoriesViewModel.shared.getSearchResult(url: url, viewController: self, parameters: nil)
         } else {
-            callGetOwners(viewController: self, q: searchText, per_page: 100, page: 1) { (success, response) in
-                
-                if success {
-                    
-                    self.searchController.endEditing(true)
-                    self.owners = response!
-                    
-                    DispatchQueue.main.async {
-                        self.tableView.reloadData()
-                    }
-                }
-            }
+            let url = "\(Network.searchUsersUrl)?q=\(searchText)&per_page=\(100)&page=\(1)"
+            RepositoriesViewModel.shared.getOwners(url: url, viewController: self, parameters: nil)
         }
+        
+        self.observers()
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
