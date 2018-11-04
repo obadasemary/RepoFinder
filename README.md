@@ -37,5 +37,5 @@ Siren
 
 used reponame/username endpoint for search
 
-img src="https://raw.githubusercontent.com/obadasemary/RepoFinder/master/Simulator%20Screen%20Shot%20-%20iPhone%20X%20-%202018-11-04%20at%2021.31.45.png" alt="HTML5 Icon" width="276" height="598">
+<img src="https://raw.githubusercontent.com/obadasemary/RepoFinder/master/Simulator%20Screen%20Shot%20-%20iPhone%20X%20-%202018-11-04%20at%2021.31.45.png" alt="HTML5 Icon" width="276" height="598">
 
