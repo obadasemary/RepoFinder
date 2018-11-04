@@ -14,7 +14,6 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.view.backgroundColor = Color.white.value
         self.navigationController?.navigationBar.barTintColor = Color.white.value
         self.hideKeyboardWhenTappedAround()
@@ -32,7 +31,6 @@ class BaseViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationItem.backBarButtonItem?.tintColor = Color.black.value
     }

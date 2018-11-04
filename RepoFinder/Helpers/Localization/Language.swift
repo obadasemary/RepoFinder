@@ -40,17 +40,17 @@ class Language {
     
     class func createLocalNotification(language: String) {
         
-        let notification = UILocalNotification()
-        notification.fireDate = Date(timeIntervalSinceNow: 1)
-        notification.alertBody = Language.localNotificationBody(language: language)
-        notification.soundName = UILocalNotificationDefaultSoundName
-        UIApplication.shared.scheduleLocalNotification(notification)
-        
-        guard let settings = UIApplication.shared.currentUserNotificationSettings else { return }
-        
-        if settings.types == .none {
-            
-            return
-        }
+//        let notification = UILocalNotification()
+//        notification.fireDate = Date(timeIntervalSinceNow: 1)
+//        notification.alertBody = Language.localNotificationBody(language: language)
+//        notification.soundName = UILocalNotificationDefaultSoundName
+//        UIApplication.shared.scheduleLocalNotification(notification)
+//
+//        guard let settings = UIApplication.shared.currentUserNotificationSettings else { return }
+//        
+//        if settings.types == .none {
+//            
+//            return
+//        }
     }
 }

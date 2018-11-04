@@ -33,6 +33,8 @@ class OwnerViewController: BaseViewController, NVActivityIndicatorViewable {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initUI()
+        
         guard let ownerLogin = owner?.login else { return }
         
         startAnimating(sizeNVActivityIndicator, message: "", type: .ballClipRotateMultiple)
@@ -66,16 +68,6 @@ class OwnerViewController: BaseViewController, NVActivityIndicatorViewable {
                 }
             }
         }
-        
-        initUI()
-    }
-
-    // MARK: - viewWillAppear
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
-        self.navigationController?.navigationBar.barTintColor = Color.white.value
     }
     
     // MARK: - initUI
