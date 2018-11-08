@@ -17,9 +17,4 @@ target 'RepoFinder' do
     pod 'KeychainAccess'
     pod 'Siren', :git => 'https://github.com/ArtSabintsev/Siren.git', :branch => 'swift4.1'
     
-    target 'RepoFinderTests' do
-        inherit! :search_paths
-        # Pods for testing
-        pod 'Firebase/Core'
-    end
 end
