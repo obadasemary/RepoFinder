@@ -17,11 +17,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-<<<<<<< HEAD
-	<string>202</string>
-=======
 	<string>203</string>
->>>>>>> MVC
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
