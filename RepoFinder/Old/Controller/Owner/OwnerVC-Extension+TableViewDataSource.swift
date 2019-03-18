@@ -35,8 +35,8 @@ extension OwnerViewController: UITableViewDataSource {
             }
         } else if indexPath.section == 1 {
             guard let currentItem = item?[indexPath.row] else { return UITableViewCell() }
-            let cell = tableView.dequeueReusableCell(withIdentifier: RepositoriesTableViewCell.identifier, for: indexPath) as! RepositoriesTableViewCell
-            cell.setupCell(item: currentItem)
+            let cell = tableView.dequeueReusableCell(withIdentifier: RepositoriesTableViewCell.className, for: indexPath) as! RepositoriesTableViewCell
+//            cell.setupCell(item: currentItem)
             return cell
         }
         

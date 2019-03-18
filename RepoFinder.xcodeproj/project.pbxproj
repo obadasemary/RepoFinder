@@ -10,7 +10,6 @@
 		95F91E4A3894B263E2F29752 /* Pods_RepoFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9794A19351AEA6911B2601 /* Pods_RepoFinder.framework */; };
 		A0ECB0E50BA25F7CF9C8EF4D /* Pods_RepoFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7564883666FBC38930A331C7 /* Pods_RepoFinderTests.framework */; };
 		AF0D5F0D218A233900D90404 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0D5F0C218A233900D90404 /* AppDelegate.swift */; };
-		AF0D5F12218A233900D90404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0D5F10218A233900D90404 /* Main.storyboard */; };
 		AF0D5F14218A233C00D90404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0D5F13218A233C00D90404 /* Assets.xcassets */; };
 		AF0D5F17218A233C00D90404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0D5F15218A233C00D90404 /* LaunchScreen.storyboard */; };
 		AF2C09A2218A2A0500D12CB3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF2C09A1218A2A0500D12CB3 /* GoogleService-Info.plist */; };
@@ -63,16 +62,15 @@
 		AF2C0A2C218A5DA300D12CB3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C0A2A218A5DA300D12CB3 /* SearchViewController.swift */; };
 		AF2C0A2D218A5DA300D12CB3 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF2C0A2B218A5DA300D12CB3 /* SearchViewController.xib */; };
 		AF2C0A2F218A5DEE00D12CB3 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C0A2E218A5DEE00D12CB3 /* Flow.swift */; };
-		AF2C0A32218A62A000D12CB3 /* SearchVC-Extension+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C0A31218A62A000D12CB3 /* SearchVC-Extension+TableViewDataSource.swift */; };
-		AF2C0A34218A62E500D12CB3 /* SearchVC-Extension+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C0A33218A62E500D12CB3 /* SearchVC-Extension+TableViewDelegate.swift */; };
-		AF2C0A38218A63C700D12CB3 /* SearchVC-Extension+SearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C0A37218A63C700D12CB3 /* SearchVC-Extension+SearchBarDelegate.swift */; };
+		AF2C0A32218A62A000D12CB3 /* SearchViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C0A31218A62A000D12CB3 /* SearchViewController+UITableViewDataSource.swift */; };
+		AF2C0A34218A62E500D12CB3 /* SearchViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C0A33218A62E500D12CB3 /* SearchViewController+UITableViewDelegate.swift */; };
+		AF2C0A38218A63C700D12CB3 /* SearchViewController+UISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C0A37218A63C700D12CB3 /* SearchViewController+UISearchBarDelegate.swift */; };
 		AF2C0A3D218A65DB00D12CB3 /* RepositoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C0A3B218A65DB00D12CB3 /* RepositoriesTableViewCell.swift */; };
 		AF2C0A3E218A65DB00D12CB3 /* RepositoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF2C0A3C218A65DB00D12CB3 /* RepositoriesTableViewCell.xib */; };
 		AF2C0A41218C893700D12CB3 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C0A40218C893700D12CB3 /* Repositories.swift */; };
 		AF2C0A43218C894900D12CB3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C0A42218C894900D12CB3 /* Item.swift */; };
 		AF2C0A45218C896900D12CB3 /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C0A44218C896900D12CB3 /* License.swift */; };
 		AF2C0A47218C897900D12CB3 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C0A46218C897900D12CB3 /* Owner.swift */; };
-		AF2C0A49218C943700D12CB3 /* SearchVC-Ex+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C0A48218C943700D12CB3 /* SearchVC-Ex+Helpers.swift */; };
 		AF336EE5218E9326007B21E2 /* UIVIew-Extension+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF336EE4218E9326007B21E2 /* UIVIew-Extension+UISearchBar.swift */; };
 		AF336EE9218EA6CB007B21E2 /* OwnerVC-Extension+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF336EE6218EA6CB007B21E2 /* OwnerVC-Extension+TableViewDelegate.swift */; };
 		AF336EEA218EA6CB007B21E2 /* OwnerVC-Extension+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF336EE7218EA6CB007B21E2 /* OwnerVC-Extension+TableViewDataSource.swift */; };
@@ -80,6 +78,17 @@
 		AF336EED218F36A3007B21E2 /* Owners.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF336EEC218F36A3007B21E2 /* Owners.swift */; };
 		AF336EF5218F5534007B21E2 /* RepoFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF336EF4218F5534007B21E2 /* RepoFinderTests.swift */; };
 		AF336F29218F5C42007B21E2 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF336F28218F5C41007B21E2 /* Box.swift */; };
+		AF79A0882232974B00F88A96 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A0872232974B00F88A96 /* SearchPresenter.swift */; };
+		AF79A08A2232975700F88A96 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A0892232975700F88A96 /* SearchInteractor.swift */; };
+		AF79A08C2232976300F88A96 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A08B2232976300F88A96 /* SearchRouter.swift */; };
+		AF79A08F2232978F00F88A96 /* SearchProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A08E2232978F00F88A96 /* SearchProtocols.swift */; };
+		AF79A09122329B9A00F88A96 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A09022329B9A00F88A96 /* NSObjectExtension.swift */; };
+		AF79A09322329BE700F88A96 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A09222329BE700F88A96 /* UITableViewCellExtension.swift */; };
+		AF79A09822329FDB00F88A96 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A09722329FDB00F88A96 /* NetworkLayer.swift */; };
+		AF79A09C2232A1EF00F88A96 /* RepoistoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A09B2232A1EF00F88A96 /* RepoistoriesRouter.swift */; };
+		AF79A09E2232A22200F88A96 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A09D2232A22200F88A96 /* Constants.swift */; };
+		AF79A0A22232A88F00F88A96 /* RepoistoriesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A0A12232A88F00F88A96 /* RepoistoriesWorker.swift */; };
+		AF79A0A42232AFC000F88A96 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79A0A32232AFC000F88A96 /* UIImageViewExtension.swift */; };
 		AFFA9DED218E88290093F380 /* RepositoryDetailsVC-Ex+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA9DEC218E88290093F380 /* RepositoryDetailsVC-Ex+Helpers.swift */; };
 		AFFA9DF1218E8C920093F380 /* OwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFA9DEF218E8C920093F380 /* OwnerViewController.swift */; };
 		AFFA9DF2218E8C920093F380 /* OwnerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFA9DF0218E8C920093F380 /* OwnerViewController.xib */; };
@@ -112,7 +121,6 @@
 		7D52EA4756432CC38E5DD00F /* Pods-RepoFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepoFinder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RepoFinder/Pods-RepoFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		AF0D5F09218A233900D90404 /* RepoFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0D5F0C218A233900D90404 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF0D5F11218A233900D90404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF0D5F13218A233C00D90404 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF0D5F16218A233C00D90404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF0D5F18218A233C00D90404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -166,16 +174,15 @@
 		AF2C0A2A218A5DA300D12CB3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		AF2C0A2B218A5DA300D12CB3 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		AF2C0A2E218A5DEE00D12CB3 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
-		AF2C0A31218A62A000D12CB3 /* SearchVC-Extension+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchVC-Extension+TableViewDataSource.swift"; sourceTree = "<group>"; };
-		AF2C0A33218A62E500D12CB3 /* SearchVC-Extension+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchVC-Extension+TableViewDelegate.swift"; sourceTree = "<group>"; };
-		AF2C0A37218A63C700D12CB3 /* SearchVC-Extension+SearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchVC-Extension+SearchBarDelegate.swift"; sourceTree = "<group>"; };
+		AF2C0A31218A62A000D12CB3 /* SearchViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		AF2C0A33218A62E500D12CB3 /* SearchViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
+		AF2C0A37218A63C700D12CB3 /* SearchViewController+UISearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+UISearchBarDelegate.swift"; sourceTree = "<group>"; };
 		AF2C0A3B218A65DB00D12CB3 /* RepositoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesTableViewCell.swift; sourceTree = "<group>"; };
 		AF2C0A3C218A65DB00D12CB3 /* RepositoriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesTableViewCell.xib; sourceTree = "<group>"; };
 		AF2C0A40218C893700D12CB3 /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
 		AF2C0A42218C894900D12CB3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		AF2C0A44218C896900D12CB3 /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
 		AF2C0A46218C897900D12CB3 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
-		AF2C0A48218C943700D12CB3 /* SearchVC-Ex+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchVC-Ex+Helpers.swift"; sourceTree = "<group>"; };
 		AF336EE4218E9326007B21E2 /* UIVIew-Extension+UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew-Extension+UISearchBar.swift"; sourceTree = "<group>"; };
 		AF336EE6218EA6CB007B21E2 /* OwnerVC-Extension+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OwnerVC-Extension+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		AF336EE7218EA6CB007B21E2 /* OwnerVC-Extension+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OwnerVC-Extension+TableViewDataSource.swift"; sourceTree = "<group>"; };
@@ -185,6 +192,17 @@
 		AF336EF4218F5534007B21E2 /* RepoFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoFinderTests.swift; sourceTree = "<group>"; };
 		AF336EF6218F5534007B21E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF336F28218F5C41007B21E2 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		AF79A0872232974B00F88A96 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		AF79A0892232975700F88A96 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		AF79A08B2232976300F88A96 /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		AF79A08E2232978F00F88A96 /* SearchProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProtocols.swift; sourceTree = "<group>"; };
+		AF79A09022329B9A00F88A96 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		AF79A09222329BE700F88A96 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		AF79A09722329FDB00F88A96 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		AF79A09B2232A1EF00F88A96 /* RepoistoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoistoriesRouter.swift; sourceTree = "<group>"; };
+		AF79A09D2232A22200F88A96 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AF79A0A12232A88F00F88A96 /* RepoistoriesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoistoriesWorker.swift; sourceTree = "<group>"; };
+		AF79A0A32232AFC000F88A96 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		AFFA9DEC218E88290093F380 /* RepositoryDetailsVC-Ex+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RepositoryDetailsVC-Ex+Helpers.swift"; sourceTree = "<group>"; };
 		AFFA9DEF218E8C920093F380 /* OwnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerViewController.swift; sourceTree = "<group>"; };
 		AFFA9DF0218E8C920093F380 /* OwnerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OwnerViewController.xib; sourceTree = "<group>"; };
@@ -252,19 +270,16 @@
 		AF0D5F0B218A233900D90404 /* RepoFinder */ = {
 			isa = PBXGroup;
 			children = (
-				AF0D5F0C218A233900D90404 /* AppDelegate.swift */,
-				AF2C09E8218A3A6900D12CB3 /* Network */,
-				AF2C09C8218A3A6900D12CB3 /* Resources */,
-				AF2C09A3218A3A6900D12CB3 /* Helpers */,
-				AF2C0A29218A5D8200D12CB3 /* Controller */,
-				AF2C0A3F218C890F00D12CB3 /* Model */,
-				AF2C0A39218A64E700D12CB3 /* View */,
-				AF336F2A218F5C60007B21E2 /* ViewModel */,
-				AF0D5F10218A233900D90404 /* Main.storyboard */,
-				AF0D5F13218A233C00D90404 /* Assets.xcassets */,
-				AF0D5F15218A233C00D90404 /* LaunchScreen.storyboard */,
-				AF0D5F18218A233C00D90404 /* Info.plist */,
-				AF2C09A1218A2A0500D12CB3 /* GoogleService-Info.plist */,
+				AF79A07D223294A700F88A96 /* Old */,
+				AF79A0822232951F00F88A96 /* Model */,
+				AF79A0812232951200F88A96 /* Scenes */,
+				AF79A0832232952800F88A96 /* Utilities */,
+				AF79A0842232953200F88A96 /* Extensions */,
+				AF79A07F223294DA00F88A96 /* Resources */,
+				AF79A09522329FC000F88A96 /* NetworkLayer */,
+				AF79A09F2232A83500F88A96 /* Workers */,
+				AF79A080223294EA00F88A96 /* Configuration */,
+				AF79A07E223294B700F88A96 /* Core */,
 			);
 			path = RepoFinder;
 			sourceTree = "<group>";
@@ -422,7 +437,6 @@
 			isa = PBXGroup;
 			children = (
 				AF2C0A2E218A5DEE00D12CB3 /* Flow.swift */,
-				AFFC8149218D059B0080DDFF /* BaseViewController.swift */,
 				AF2C0A30218A622900D12CB3 /* Search */,
 				AFFC8139218CE3F90080DDFF /* RepositoryDetails */,
 				AFFA9DEE218E8C750093F380 /* Owner */,
@@ -433,12 +447,6 @@
 		AF2C0A30218A622900D12CB3 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				AF2C0A2A218A5DA300D12CB3 /* SearchViewController.swift */,
-				AF2C0A2B218A5DA300D12CB3 /* SearchViewController.xib */,
-				AF2C0A31218A62A000D12CB3 /* SearchVC-Extension+TableViewDataSource.swift */,
-				AF2C0A33218A62E500D12CB3 /* SearchVC-Extension+TableViewDelegate.swift */,
-				AF2C0A37218A63C700D12CB3 /* SearchVC-Extension+SearchBarDelegate.swift */,
-				AF2C0A48218C943700D12CB3 /* SearchVC-Ex+Helpers.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -446,9 +454,7 @@
 		AF2C0A39218A64E700D12CB3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AF2C0A3A218A64F200D12CB3 /* Search */,
 				AFFC8144218CFB6A0080DDFF /* RepositoryDetails */,
-				AFFA9DF3218E8CAB0093F380 /* Owner */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -465,10 +471,6 @@
 		AF2C0A3F218C890F00D12CB3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AF2C0A40218C893700D12CB3 /* Repositories.swift */,
-				AF2C0A42218C894900D12CB3 /* Item.swift */,
-				AF2C0A44218C896900D12CB3 /* License.swift */,
-				AF2C0A46218C897900D12CB3 /* Owner.swift */,
 				AF336EEC218F36A3007B21E2 /* Owners.swift */,
 			);
 			path = Model;
@@ -483,11 +485,140 @@
 			path = RepoFinderTests;
 			sourceTree = "<group>";
 		};
-		AF336F2A218F5C60007B21E2 /* ViewModel */ = {
+		AF79A07D223294A700F88A96 /* Old */ = {
 			isa = PBXGroup;
 			children = (
+				AF2C09E8218A3A6900D12CB3 /* Network */,
+				AF2C09C8218A3A6900D12CB3 /* Resources */,
+				AF2C09A3218A3A6900D12CB3 /* Helpers */,
+				AF2C0A29218A5D8200D12CB3 /* Controller */,
+				AF2C0A3F218C890F00D12CB3 /* Model */,
+				AF2C0A39218A64E700D12CB3 /* View */,
 			);
-			path = ViewModel;
+			path = Old;
+			sourceTree = "<group>";
+		};
+		AF79A07E223294B700F88A96 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AF0D5F0C218A233900D90404 /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AF79A07F223294DA00F88A96 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF0D5F13218A233C00D90404 /* Assets.xcassets */,
+				AF0D5F15218A233C00D90404 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AF79A080223294EA00F88A96 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				AF0D5F18218A233C00D90404 /* Info.plist */,
+				AF2C09A1218A2A0500D12CB3 /* GoogleService-Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		AF79A0812232951200F88A96 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AF79A0852232966000F88A96 /* Search */,
+				AFFC8149218D059B0080DDFF /* BaseViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AF79A0822232951F00F88A96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF2C0A40218C893700D12CB3 /* Repositories.swift */,
+				AF2C0A42218C894900D12CB3 /* Item.swift */,
+				AF2C0A44218C896900D12CB3 /* License.swift */,
+				AF2C0A46218C897900D12CB3 /* Owner.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF79A0832232952800F88A96 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AF79A09D2232A22200F88A96 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AF79A0842232953200F88A96 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF79A09022329B9A00F88A96 /* NSObjectExtension.swift */,
+				AF79A09222329BE700F88A96 /* UITableViewCellExtension.swift */,
+				AF79A0A32232AFC000F88A96 /* UIImageViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AF79A0852232966000F88A96 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AF79A09422329D7600F88A96 /* TableViewCells */,
+				AF79A0862232968500F88A96 /* ViewController */,
+				AF79A0872232974B00F88A96 /* SearchPresenter.swift */,
+				AF79A0892232975700F88A96 /* SearchInteractor.swift */,
+				AF79A08B2232976300F88A96 /* SearchRouter.swift */,
+				AF79A08E2232978F00F88A96 /* SearchProtocols.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AF79A0862232968500F88A96 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AF2C0A37218A63C700D12CB3 /* SearchViewController+UISearchBarDelegate.swift */,
+				AF2C0A33218A62E500D12CB3 /* SearchViewController+UITableViewDelegate.swift */,
+				AF2C0A31218A62A000D12CB3 /* SearchViewController+UITableViewDataSource.swift */,
+				AF2C0A2A218A5DA300D12CB3 /* SearchViewController.swift */,
+				AF2C0A2B218A5DA300D12CB3 /* SearchViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AF79A09422329D7600F88A96 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				AF2C0A3A218A64F200D12CB3 /* Search */,
+				AFFA9DF3218E8CAB0093F380 /* Owner */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		AF79A09522329FC000F88A96 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AF79A0992232A1AC00F88A96 /* Routers */,
+				AF79A09722329FDB00F88A96 /* NetworkLayer.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		AF79A0992232A1AC00F88A96 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				AF79A09B2232A1EF00F88A96 /* RepoistoriesRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		AF79A09F2232A83500F88A96 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				AF79A0A12232A88F00F88A96 /* RepoistoriesWorker.swift */,
+			);
+			path = Workers;
 			sourceTree = "<group>";
 		};
 		AFFA9DEE218E8C750093F380 /* Owner */ = {
@@ -669,7 +800,6 @@
 				AF2C0A08218A3A6A00D12CB3 /* SourceSansPro-SemiBoldItalic.ttf in Resources */,
 				AF2C0A05218A3A6A00D12CB3 /* GothamRounded-MediumItalic.otf in Resources */,
 				AF2C0A00218A3A6A00D12CB3 /* Config.plist in Resources */,
-				AF0D5F12218A233900D90404 /* Main.storyboard in Resources */,
 				AF2C0A0C218A3A6A00D12CB3 /* Oswald-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -769,7 +899,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 8ba2612b61a44c1fc7a8e456d3e77f6c00469717 fa66ee7eedf8f50b3acc9da66c11a85adacb56ea0bb917d12edbff8e2afdf02b";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 8ba2612b61a44c1fc7a8e456d3e77f6c00469717 fa66ee7eedf8f50b3acc9da66c11a85adacb56ea0bb917d12edbff8e2afdf02b\n";
 		};
 		AF2C09A0218A288900D12CB3 /* Build Number Increment Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -782,8 +912,8 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+			shellScript = "
+";
 		};
 		DD9D3A07A8B037C50BFE28E8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -811,8 +941,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF2C09FD218A3A6A00D12CB3 /* DataManager.swift in Sources */,
+				AF79A09122329B9A00F88A96 /* NSObjectExtension.swift in Sources */,
 				AF2C0A2F218A5DEE00D12CB3 /* Flow.swift in Sources */,
 				AF2C0A45218C896900D12CB3 /* License.swift in Sources */,
+				AF79A0A22232A88F00F88A96 /* RepoistoriesWorker.swift in Sources */,
 				AF2C0A03218A3A6A00D12CB3 /* Font.swift in Sources */,
 				AF2C0A3D218A65DB00D12CB3 /* RepositoriesTableViewCell.swift in Sources */,
 				AF336EED218F36A3007B21E2 /* Owners.swift in Sources */,
@@ -830,9 +962,14 @@
 				AF2C09FE218A3A6A00D12CB3 /* Appearance.swift in Sources */,
 				AF2C09F5218A3A6A00D12CB3 /* PhoneFormatter.swift in Sources */,
 				AFFC814D218D06600080DDFF /* RepositoryDetailsVC-Extension+TableViewDataSource.swift in Sources */,
+				AF79A0882232974B00F88A96 /* SearchPresenter.swift in Sources */,
+				AF79A08F2232978F00F88A96 /* SearchProtocols.swift in Sources */,
 				AFFA9DF6218E8CD20093F380 /* OwnerTableViewCell.swift in Sources */,
 				AF2C09F0218A3A6A00D12CB3 /* SirenHelper.swift in Sources */,
-				AF2C0A32218A62A000D12CB3 /* SearchVC-Extension+TableViewDataSource.swift in Sources */,
+				AF79A09E2232A22200F88A96 /* Constants.swift in Sources */,
+				AF2C0A32218A62A000D12CB3 /* SearchViewController+UITableViewDataSource.swift in Sources */,
+				AF79A09322329BE700F88A96 /* UITableViewCellExtension.swift in Sources */,
+				AF79A08C2232976300F88A96 /* SearchRouter.swift in Sources */,
 				AF2C0A47218C897900D12CB3 /* Owner.swift in Sources */,
 				AF2C09F4218A3A6A00D12CB3 /* KeyboardManager.swift in Sources */,
 				AF2C09F9218A3A6A00D12CB3 /* UIView+constraints.swift in Sources */,
@@ -841,16 +978,19 @@
 				AF2C09FC218A3A6A00D12CB3 /* BorderButton.swift in Sources */,
 				AF2C0A2C218A5DA300D12CB3 /* SearchViewController.swift in Sources */,
 				AF2C09FA218A3A6A00D12CB3 /* Extension.swift in Sources */,
+				AF79A09822329FDB00F88A96 /* NetworkLayer.swift in Sources */,
+				AF79A09C2232A1EF00F88A96 /* RepoistoriesRouter.swift in Sources */,
 				AF0D5F0D218A233900D90404 /* AppDelegate.swift in Sources */,
 				AFFC813C218CE7340080DDFF /* RepositoryDetailsViewController.swift in Sources */,
 				AF336EE5218E9326007B21E2 /* UIVIew-Extension+UISearchBar.swift in Sources */,
 				AF2C09FB218A3A6A00D12CB3 /* RightLeftIconButton.swift in Sources */,
-				AF2C0A49218C943700D12CB3 /* SearchVC-Ex+Helpers.swift in Sources */,
-				AF2C0A34218A62E500D12CB3 /* SearchVC-Extension+TableViewDelegate.swift in Sources */,
+				AF2C0A34218A62E500D12CB3 /* SearchViewController+UITableViewDelegate.swift in Sources */,
+				AF79A08A2232975700F88A96 /* SearchInteractor.swift in Sources */,
 				AF2C0A04218A3A6A00D12CB3 /* Language.swift in Sources */,
 				AF2C0A23218A3A6A00D12CB3 /* Network.swift in Sources */,
 				AFFA9DF1218E8C920093F380 /* OwnerViewController.swift in Sources */,
-				AF2C0A38218A63C700D12CB3 /* SearchVC-Extension+SearchBarDelegate.swift in Sources */,
+				AF79A0A42232AFC000F88A96 /* UIImageViewExtension.swift in Sources */,
+				AF2C0A38218A63C700D12CB3 /* SearchViewController+UISearchBarDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,14 +1013,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AF0D5F10218A233900D90404 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF0D5F11218A233900D90404 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AF0D5F15218A233C00D90404 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1014,7 +1146,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KM569NM77P;
-				INFOPLIST_FILE = RepoFinder/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RepoFinder/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1035,7 +1167,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KM569NM77P;
-				INFOPLIST_FILE = RepoFinder/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RepoFinder/Configuration/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
